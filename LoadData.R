@@ -19,5 +19,5 @@ Test= do.call(rbind, lapply(seq_along(tables),
 
 Test$Cost= as.numeric(gsub("[[:punct:]]", "",Test$Cost))/10
 
-
+Test$Points= as.numeric(Test$Points)
 
